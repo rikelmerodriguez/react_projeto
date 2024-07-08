@@ -18,7 +18,7 @@ function App() {
     <Provider store={store}>
       <GlobalStyle />
       <div className="container">
-        <Header favoritos={[]} />
+        <Header />
         <Produtos />
       </div>
     </Provider>

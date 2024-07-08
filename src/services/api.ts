@@ -3,7 +3,7 @@ import { Produto } from '../App'
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://fake-api-tau.vercel.app/'
+    baseUrl: 'https://fake-api-tau.vercel.app'
   }),
   endpoints: (builder) => ({
     getProdutos: builder.query<Produto[], void>({
@@ -13,4 +13,5 @@ const api = createApi({
 })
 
 export const { useGetProdutosQuery } = api
+
 export default api
